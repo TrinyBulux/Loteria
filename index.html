@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraja de Lotería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-screen" class="screen">
+        <img src="wallpaper.jpg" alt="Wallpaper" class="background">
+        <div class="centered">
+            <h1>LOTERÍA</h1>
+            <button id="start-button" class="btn">¡Corre y Juega!</button>
+        </div>
+    </div>
+    <div id="shuffle-screen" class="screen hidden">
+        <div class="centered shuffle-container">
+            <div id="last-cards" class="last-cards"></div>
+            <img id="current-card" src="" alt="Carta Actual" class="card-image">
+            <div class="button-container">
+                <button id="next-button" class="btn">SIGUIENTE</button>
+                <div>
+                    <button id="review-button" class="btn small">Revisar</button>
+                    <button id="reset-button" class="btn small">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="review-screen" class="screen hidden">
+        <div class="centered review-container">
+            <div id="review-cards" class="review-cards"></div>
+            <button id="back-button" class="btn">Regresar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
